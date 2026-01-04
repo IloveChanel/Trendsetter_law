@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags for SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trendsetter Legal Group - Trusted legal experts in Michigan offering personal injury, corporate law, family law, estate planning, and more. Over 25 years of combined experience.">
+    <meta name="keywords" content="law firm Michigan, legal attorney, Michigan lawyers, best law firm near me, personal injury lawyer, family law attorney, corporate counsel">
+    <meta name="author" content="Trendsetter Legal Group">
+    <meta name="theme-color" content="#1a365d">
+    <title>Trendsetter Legal Group - Premier Law Firm in Michigan</title>
+
+    <!-- Schema.org Structured Data for LegalService -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Trendsetter Legal Group",
+        "description": "Premier law firm in Michigan specializing in personal injury, corporate law, family law, estate planning, criminal defense, real estate, immigration, and employment law.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "500 North Woodward Avenue, Suite 2500",
+            "addressLocality": "Bloomfield Hills",
+            "addressRegion": "MI",
+            "postalCode": "48304",
+            "addressCountry": "US"
+        },
+        "telephone": "+1-248-555-0123",
+        "email": "info@legacylegal.com",
+        "url": "https://legacylegal.com",
+        "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+        "priceRange": "$",
+        "areaServed": {
+            "@type": "State",
+            "name": "Michigan"
+        },
+        "availableLanguage": {
+            "@type": "Language",
+            "name": "English"
+        }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2d5a8c;
+            --accent: #d4af37;
+            --light-bg: #f8f9fa;
+            --text-dark: #2c3e50;
+            --text-light: #7f8c8d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .slide-in-right {
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+
+        .animate-delay-1 { animation-delay: 0.1s; }
+        .animate-delay-2 { animation-delay: 0.2s; }
+        .animate-delay-3 { animation-delay: 0.3s; }
+        .animate-delay-4 { animation-delay: 0.4s; }
+
+        /* Navigation */
+        nav {
+            background: rgba(26, 54, 93, 0.98);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            font-family: 'Merriweather', serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('Hero_1.png') center/cover;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            z-index: 2;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: white;
+            line-height: 1.2;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            color: #e8e8e8;
+            font-weight: 300;
+            animation: fadeInUp 1s ease-out 0.2s backwards;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.4s backwards;
+        }
+
+        .btn {
+            padding: 16px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: var(--primary);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #e8c547;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        /* Sticky CTA Button */
+        .sticky-cta {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            background: var(--accent);
+            color: var(--primary);
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 10px 35px rgba(212, 175, 55, 0.4);
+            transition: all 0.3s ease;
+            display: none;
+            font-size: 0.95rem;
+            cursor: pointer;
+            border: none;
+            white-space: nowrap;
+        }
+
+        .sticky-cta.show {
+            display: inline-block;
+            animation: slideInRight 0.5s ease-out;
+        }
+
+        .sticky-cta:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 45px rgba(212, 175, 55, 0.5);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 80px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* About Section */
+        #about {
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .about-image {
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Practice Areas Section */
+        #practice-areas {
+            background: var(--light-bg);
+        }
+
+        .practice-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .practice-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--accent);
+        }
+
+        .practice-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .practice-icon {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .practice-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .practice-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Attorneys Section */
+        #attorneys {
+            background: white;
+        }
+
+        .attorney-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+
+        .attorney-card {
+            text-align: center;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .attorney-image {
+            width: 100%;
+            aspect-ratio: 3/4;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .attorney-card:hover .attorney-image {
+            transform: scale(1.03);
+        }
+
+        .attorney-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .attorney-name {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+
+        .attorney-title {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .attorney-bio {
+            color: var(--text-light);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* Testimonials Section */
+        #testimonials {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+        }
+
+        #testimonials h2 {
+            color: white;
+        }
+
+        #testimonials h2::after {
+            background: var(--accent);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .stars {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        /* Blog Section */
+        #blog {
+            background: var(--light-bg);
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 30px;
+        }
+
+        .blog-date {
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .blog-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .blog-card p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .blog-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .blog-link:hover {
+            color: var(--primary);
+        }
+
+        /* Contact Section */
+        #contact {
+            background: white;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--primary);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .contact-info-item {
+            display: flex;
+            gap: 20px;
+        }
+
+        .contact-icon {
+            font-size: 1.8rem;
+            color: var(--accent);
+            min-width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-details h3 {
+            margin-bottom: 5px;
+        }
+
+        .contact-details p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        #map {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 30px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h4 {
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .footer-section a {
+            color: #e8e8e8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background: #e8c547;
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            color: #c0c0c0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .about-content,
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            .practice-grid,
+            .attorney-grid,
+            .blog-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                position: relative;
+            }
+
+            .sticky-cta {
+                bottom: 20px;
+                right: 20px;
+                padding: 12px 18px;
+                font-size: 0.85rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Form Success Message */
+        .form-message {
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: none;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .form-message.success {
+            background: #d4edda;
+            color: #155724;
+            display: block;
+        }
+
+        .form-message.error {
+            background: #f8d7da;
+            color: #721c24;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="flex items-center justify-between px-4 md:px-8 py-4">
+        <div class="nav-logo">⚖️ Trendsetter Legal Group</div>
+        <div class="hidden md:flex gap-8">
+            <a href="#about">About</a>
+            <a href="#practice-areas">Practice Areas</a>
+            <a href="#attorneys">Attorneys</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#blog">Insights</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="md:hidden">
+            <button id="menu-toggle" class="text-white text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-blue-900 px-4 py-4">
+        <a href="#about" class="block text-white py-2">About</a>
+        <a href="#practice-areas" class="block text-white py-2">Practice Areas</a>
+        <a href="#attorneys" class="block text-white py-2">Attorneys</a>
+        <a href="#testimonials" class="block text-white py-2">Testimonials</a>
+        <a href="#blog" class="block text-white py-2">Insights</a>
+        <a href="#contact" class="block text-white py-2">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Powerful Advocacy.<br>Proven Results.</h1>
+            <p class="tagline">Trusted Legal Experts in Michigan and Beyond.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Request Consultation</a>
+                <a href="tel:+12485550123" class="btn btn-secondary">Call Now: (248) 555-0123</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky CTA Button -->
+    <button id="sticky-cta" class="sticky-cta">
+        <i class="fas fa-calendar-check"></i> Schedule Consultation
+    </button>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Our Firm</h2>
+            <div class="about-content fade-in-up">
+                <div class="about-text animate-delay-1">
+                    <h3>Client-First Legal Excellence</h3>
+                    <p>
+                        At Trendsetter Legal Group, we believe that powerful advocacy begins with understanding our clients' unique situations. With over 25 years of combined experience across multiple practice areas, our team of dedicated attorneys has established a reputation for delivering strategic counsel and exceptional results.
+                    </p>
+                    <p>
+                        We serve professionals, families, and businesses throughout Michigan and beyond. Our client-first representation approach ensures that every case receives personalized attention, meticulous preparation, and aggressive advocacy. We don't just practice law—we build lasting relationships founded on trust, integrity, and a commitment to your success.
+                    </p>
+                    <p>
+                        From initial consultation to courtroom victory, Trendsetter Legal Group stands as your steadfast partner, navigating complex legal challenges with precision and compassion.
+                    </p>
+                </div>
+                <div class="about-image animate-delay-2">
+                    <img src="client-first.png" alt="Client-first legal excellence team collaboration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Areas Section -->
+    <section id="practice-areas">
+        <div class="container">
+            <h2>Practice Areas</h2>
+            <div class="practice-grid">
+                <div class="practice-card fade-in-up animate-delay-1">
+                    <div class="practice-icon"><i class="fas fa-user-injured"></i></div>
+                    <h3>Personal Injury</h3>
+                    <p>Aggressive representation for accident and injury victims, fighting for maximum compensation.</p>
+                </div>
+                <div class="practice-card fade-in-up animate-delay-2">
+                    <div class="practice-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Business & Corporate Law</h3>
+                    <p>Strategic counsel for business formation, contracts, mergers, and corporate governance.</p>
+                </div>
+                <div class="practice-card fade-in-up animate-delay-3">
+                    <div class="practice-icon"><i class="fas fa-ring"></i></div>
+                    <h3>Family Law & Divorce</h3>
+                    <p>Compassionate guidance through divorce, custody, and family matters with proven results.</p>
+                </div>
+                <div class="practice-card fade-in-up animate-delay-4">
+                    <div class="practice-icon"><i class="fas fa-file-contract"></i></div>
+                    <h3>Estate Planning</h3>
+                    <p>Comprehensive estate planning and probate services to protect your family's legacy.</p>
+                </div>
+                <div class="practice-card fade-in-up animate-delay-1">
+                    <div class="practice-icon"><i class="fas fa-gavel"></i></div>
+                    <h3>Criminal Defense</h3>
+                    <p>Vigorous defense of criminal charges, protecting your rights and freedom.</p>
+                </div>
+                <div class="practice-card fade-in-up animate-delay-2">
+                    <div class="practice-icon"><i class="fas fa-home"></i></div>
+                    <h3>Real Estate Law</h3>
+                    <p>Expert guidance on property transactions, disputes, and real estate matters.</p>
+                </div>
+                <div class="practice-card fade-in-up animate-delay-3">
+                    <div class="practice-icon"><i class="fas fa-passport"></i></div>
+                    <h3>Immigration Law</h3>
+                    <p>Professional immigration law services for individuals and families seeking new opportunities.</p>
+                </div>
+                <div class="practice-card fade-in-up animate-delay-4">
+                    <div class="practice-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Employment Law</h3>
+                    <p>Protection of employee rights and employer compliance with labor and employment regulations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attorneys Section -->
+    <section id="attorneys">
+        <div class="container">
+            <h2>Meet Our Attorneys</h2>
+            <div class="attorney-grid">
+                <div class="attorney-card animate-delay-1">
+                    <div class="attorney-image">
+                        <img src="attorney_2.png" alt="Jordan M. Carter, Managing Partner">
+                    </div>
+                    <h3 class="attorney-name">Jordan M. Carter, Esq.</h3>
+                    <p class="attorney-title">Managing Partner</p>
+                    <p class="attorney-bio">
+                        Jordan brings 20 years of corporate law experience and serves as Managing Partner. Specializing in complex business transactions and mergers, Jordan has guided hundreds of clients through significant corporate challenges. Known for strategic thinking and business acumen.
+                    </p>
+                </div>
+                <div class="attorney-card animate-delay-2">
+                    <div class="attorney-image">
+                        <img src="attorney_1.png" alt="Olivia Reyes, Senior Trial Attorney">
+                    </div>
+                    <h3 class="attorney-name">Olivia Reyes, JD</h3>
+                    <p class="attorney-title">Senior Trial Attorney</p>
+                    <p class="attorney-bio">
+                        Olivia is a powerhouse litigator with 18 years of civil litigation experience. With an impressive trial record and a talent for client advocacy, she handles complex personal injury and commercial disputes. Her courtroom presence is legendary.
+                    </p>
+                </div>
+                <div class="attorney-card animate-delay-3">
+                    <div class="attorney-image">
+                        <img src="attorney_3.png" alt="Marcus Chen, Partner">
+                    </div>
+                    <h3 class="attorney-name">Marcus Chen, JD</h3>
+                    <p class="attorney-title">Partner</p>
+                    <p class="attorney-bio">
+                        Marcus combines 22 years of experience in criminal defense and family law. His sensitive approach to family matters and relentless criminal defense advocacy make him a trusted advisor for clients facing life-changing legal challenges.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>Client Testimonials</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in-up animate-delay-1">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Professionalism that exceeded expectations! The team at Legacy Legal handled my personal injury case with exceptional care and attention. Within months, they secured a settlement far beyond what I anticipated. Highly recommended!"
+                    </p>
+                    <p class="testimonial-author">— Sarah M., Satisfied Client</p>
+                </div>
+                <div class="testimonial-card fade-in-up animate-delay-2">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Working with Jordan and his team transformed our family business. Their strategic guidance on corporate structure and contractual matters saved us significant time and money. They truly understand both law and business."
+                    </p>
+                    <p class="testimonial-author">— David K., Business Owner</p>
+                </div>
+                <div class="testimonial-card fade-in-up animate-delay-3">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "During one of the most difficult periods of my life, the Legacy Legal team provided compassionate yet unwavering legal support. Marcus handled my case with dignity and achieved results I didn't think possible. Truly grateful."
+                    </p>
+                    <p class="testimonial-author">— Jennifer L., Family Law Client</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Insights Section -->
+    <section id="blog">
+        <div class="container">
+            <h2>Legal Insights & Articles</h2>
+            <div class="blog-grid">
+                <article class="blog-card fade-in-up animate-delay-1">
+                    <div class="blog-image">
+                        <img src="footer_1.png" alt="How to Prepare for a Consultation">
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-date">January 3, 2026</p>
+                        <h3>How to Prepare for a Legal Consultation</h3>
+                        <p>
+                            Preparing for your first legal consultation can significantly impact the quality of advice you receive. Learn what documents to gather, questions to ask, and how to make the most of your time with your attorney.
+                        </p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+                <article class="blog-card fade-in-up animate-delay-2">
+                    <div class="blog-image">
+                        <img src="footer_2.png" alt="Estate Planning Basics">
+                    </div>
+                    <div class="blog-content">
+                        <p class="blog-date">December 28, 2025</p>
+                        <h3>Estate Planning Basics Every Family Needs</h3>
+                        <p>
+                            Estate planning isn't just for the wealthy. Every family should have basic documents in place including wills, powers of attorney, and healthcare directives. Discover why these documents are essential for protecting your family.
+                        </p>
+                        <a href="#" class="blog-link">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form fade-in-up animate-delay-1">
+                    <h3>Send us a Message</h3>
+                    <div id="form-message" class="form-message"></div>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info fade-in-up animate-delay-2">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Office Location</h4>
+                            <p>
+                                500 North Woodward Avenue<br>
+                                Suite 2500<br>
+                                Bloomfield Hills, MI 48304
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+12485550123" style="color: inherit; text-decoration: none;">(248) 555-0123</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@legacylegal.com" style="color: inherit; text-decoration: none;">info@legacylegal.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Business Hours</h4>
+                            <p>
+                                Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                Saturday: 10:00 AM - 2:00 PM<br>
+                                Sunday: Closed
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Embedded Google Map -->
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.2453053181556!2d-83.24893!3d42.640857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824a2bbd3a6bbc7%3A0x1234567890abc!2s500%20North%20Woodward%20Ave%2C%20Bloomfield%20Hills%2C%20MI%2048304!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="300" style="border:0; border-radius: 8px; margin-top: 20px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#about">About Us</a>
+                <a href="#practice-areas">Practice Areas</a>
+                <a href="#attorneys">Our Attorneys</a>
+                <a href="#blog">Legal Insights</a>
+            </div>
+            <div class="footer-section">
+                <h4>Practice Areas</h4>
+                <a href="#">Personal Injury</a>
+                <a href="#">Corporate Law</a>
+                <a href="#">Family Law</a>
+                <a href="#">Criminal Defense</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Disclaimer</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <a href="tel:+12485550123">(248) 555-0123</a>
+                <a href="mailto:info@legacylegal.com">info@legacylegal.com</a>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 All Rights Reserved Michelle Vance www.michelletrendsetter.com 248.321.9121 | Licensed to practice in Michigan</p>
+            <p style="font-size: 0.85rem; margin-top: 10px;">Disclaimer: This website is for informational purposes only and does not constitute legal advice.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Sticky CTA Button - Show on scroll
+        const stickyCTA = document.getElementById('sticky-cta');
+        const heroSection = document.getElementById('hero');
+
+        window.addEventListener('scroll', () => {
+            const heroBottom = heroSection.offsetHeight;
+            if (window.scrollY > heroBottom) {
+                stickyCTA.classList.add('show');
+            } else {
+                stickyCTA.classList.remove('show');
+            }
+        });
+
+        // Sticky CTA click to scroll to contact
+        stickyCTA.addEventListener('click', () => {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Form submission handler
+        const contactForm = document.getElementById('contact-form');
+        const formMessage = document.getElementById('form-message');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Basic validation
+            if (!name || !email || !subject || !message) {
+                showMessage('Please fill in all required fields.', 'error');
+                return;
+            }
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showMessage('Please enter a valid email address.', 'error');
+                return;
+            }
+
+            // Simulate form submission
+            showMessage('Thank you for your message! We will contact you within 24 hours.', 'success');
+            
+            // Reset form
+            contactForm.reset();
+
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                formMessage.classList.remove('success', 'error');
+            }, 5000);
+        });
+
+        function showMessage(text, type) {
+            formMessage.textContent = text;
+            formMessage.classList.remove('success', 'error');
+            formMessage.classList.add(type);
+        }
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up, .animate-delay-1, .animate-delay-2, .animate-delay-3, .animate-delay-4').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
